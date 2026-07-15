@@ -1,0 +1,15 @@
+import React from "react";
+import { Navbar1 } from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
+export default function PublicLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <>
+            <Navbar1 />
+            <main className="flex-grow">
+                {children}
+            </main>
+            <Footer />
+        </>
+    );
+}
